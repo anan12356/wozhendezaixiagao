@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+  <head>
+    <title>412 legend</title>
+  </head>
+  <body>
+	<script>
+	try{
+		var willsetquotes = [
+			"I am a HUMAN!", 
+			"I really don't know what this student is doing.", 
+			"月月", "啊哈", "吴迪者", "指点江山", "激昂文字","狼人杀高手","飞龙宝宝","国王塔","公主塔","我已经被激怒","孝文帝","好友版本低","呵呵","无聊吧","有病吧","无聊吧说我有病","有病吧说我无聊",
+			"Don't eat 'OLD BOOKS'!", "新本",
+			"嘴巴不要啰","昨日无龙王",
+			"lao","nat","càlfúl","chilling","lame","naod(loud)",
+			"Being a being!","You,two-two!",
+			"ARE YOU TWO?","还乡团",
+			"The sky at your place is so blue!",
+			"the edge","the bottom","the center","the side",
+			"1 = 4","简单问题复杂化","复杂问题详细化","脚踏实地","我没有选C","我没有说话(你在无中生有，暗度陈仓，凭空想象，凭空捏造，无言无语，无可救药，逝者安息，一路走好)","雷电法王","查房",
+          	        "每个人都有自己的局限性，但一个人的局限性抵挡不了社会发展的洪流",
+			"Oh,no!","精神明亮的人","勤学早的人","lao本","渣、垃圾、干燥剂、我的有啊、无抵押贷款（废弃旧电池）","个鬼的","第五组全组到期","这是我们一贯的作风"
+		];
+		var quoteindex = -1;
+		function changeQuote(){
+			quoteindex == willsetquotes.length - 1 ? function(){quoteindex = 0}() : function(){quoteindex += 1}();
+			document.getElementsByName("quotes")[0].innerHTML = willsetquotes[quoteindex];
+		};
+		function changeSpeak(){
+			document.getElementsByName("speak")[0].innerHTML = "We are humans from Room 412!"
+		}
+		function disSpeak(){
+			document.getElementsByName("speak")[0].innerHTML = "Reveal…"
+		}
+		var willsetstories = [
+			"Student Gao <strong>love</strong> to leave the sh*t on the edge of the toilet, but once he accidentally stepped on it and he didn't know.So he took the sh*t to the middle of the room… and that cause a burst of laughter.",
+			"Our English teacher Liu says <strong>'嘴巴不要啰'</strong> frequently in the class, and that was <em>inexplicably funny</em>. So \ud83e\udd23 we have a lot of fun on it.",
+			"Once,we were solving a math problem,but there was something wrong,then we got an <em>inexplicably funny</em> conclusion:<strong>1 = 4!</strong>",
+			"In our class,there is a really funny student called Yu Ye.Because the pronunciation of his name is like <strong>'YUE'</strong> which means <strong>'the moon'</strong> in Chinese,we always call him <strong>'THE MOON GOD'</strong>.",
+             	   "Nowadays,we always find something <strong>inexplicably funny</strong>,and we find that the word <strong>'inexplicably funny'</strong> is <strong>inexplicably funny</strong>!And now,we give the word a new name:<strong>'IXF'<strong>!",
+		    "In our class,there is a student who has a very strange name:<strong>'Hu Xiaotong'</strong> because the word <strong>'XIAO'</strong> means 'laugh' in Chinese,and he behaves just like his name:<strong>he always looks <em>inexplicably funny</em>!</strong>"
+		];
+		var storyindex = -1;
+		function changeStory(){
+			storyindex == willsetstories.length - 1 ? function(){storyindex = 0}() : function(){storyindex += 1}();
+			document.getElementsByName("stories")[0].innerHTML = willsetstories[storyindex];
+		};
+	}catch(error){
+		console.log(error);
+	};
+	</script>
+	<style>
+		#aniunit{
+		margin: auto;
+		margin-top:20px;
+		width:100px;
+		height:100px;
+		background:#FF2200;
+		border-top-left-radius:10px;
+		-webkit-animation:circle 3s infinite ease;
+		}
+		@-webkit-keyframes circle{
+		0% {transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg);background-color:#FF2200}
+		50% {transform:rotateX(180deg) rotateY(180deg) rotateZ(180deg);background-color:#00DDFF}
+		100% {transform:rotateX(360deg) rotateY(360deg) rotateZ(360deg);background-color:#FF2200}
+		}
+		body{background-color:#222222}
+		#bl{
+		font-family:'Futura';
+		color:#DFDFDF;
+		border-bottom-right-radius:20px;
+		box-shadow: 10px 10px 5px 	#000000;
+		background-image:-webkit-linear-gradient(top,#333333,#333333,#272727);
+		}
+		#w{
+		font-family:'palatino';
+		background-image:-webkit-linear-gradient(top,#EEEEEE,#EEEEEE,#BBBBBB);
+		color:#222222;
+		border-bottom-right-radius:20px;
+		border-top-left-radius:2px;
+		border-top-right-radius:2px;
+		border-bottom-left-radius:2px;
+		box-shadow: 10px 10px 5px 	#000000;
+		}
+		#b{
+		font-family:'Avenir';
+		border-top-left-radius:2px;
+		border-top-right-radius:2px;
+		border-bottom-left-radius:2px;
+		color:#DFDFDF;
+		border-bottom-right-radius:20px;
+		box-shadow: 10px 10px 5px 	#000000;
+		background-image:-webkit-linear-gradient(top,#333399,#333399,#111177);
+		}
+		#wb{
+		font-family:'Georgia';
+		background-image:-webkit-linear-gradient(top,#EEEEEE,#EEEEEE,#BBBBBB);
+		color:#222222;
+		border-bottom-right-radius:2px;
+		border-top-left-radius:2px;
+		border-top-right-radius:2px;
+		border-bottom-left-radius:2px;
+		box-shadow: 5px 5px 5px #222222;
+		height:50px;
+		width:300px;
+		font-size:30px;
+		}
+		#wb:hover{
+		margin-left:45px;
+		margin-right:45px;
+		margin-bottom:7.5px;
+		margin-top:7.5px;
+		width:210px;
+		height:35px;
+		}
+		p{
+		font-size:130%;
+		}
+	</style>
+	<div id="aniunit"><p align="center" style="color:#EDEDED;font-size:30px;">412</p></div>
+	<div id="bl">
+    <h1>
+      412 LEGEND! - Code branch
+    </h1>
+	<h2>
+		Welcome!
+	</h2>
+	<p>
+		We are students from Room 412. We have many branches, like music, art, and this is the code branch! <strong>Welcome!</strong>
+	</p>
+	</div>
+	<br/>
+	<div id="w">
+		<h1>412 Classic Quotes<sub style="font-size:50%">To feel the 412-ic atmosphere</sub></h1>
+		<p name="quotes">
+		Click "NEXT"
+		</p>
+		<button onclick="changeQuote()" id="wb">NEXT</button>
+	</div>
+	<br/>
+	<div id="b">
+	<p>
+	<h2>WHO ARE WE? Speak out loud--</h2>
+	<h1 onmouseover="changeSpeak()" onmouseout="disSpeak()" name="speak">Reveal…</h1>
+	</p>
+	</div>
+	<div id="bl">
+	<h1>Our Stories to Tell You</h1>
+	<p name="stories">
+	Click "NEXT"
+	</p><br/>
+	<button onclick="changeStory()" id="wb">NEXT</button>
+	</div>
+	<p align="center" style="color:#444444;font-family:'Menlo'">
+	Proudly NOT powered by WordPress.<br/>
+	Or any other organization.<br/>
+	Developed by <strong>us</strong>.<br/>
+	Star <a href="https://github.com/412LEGEND/Homepage" style="color:#444444">me</a> on GitHub to be mentioned of future uploads. 
+	<p>
+  </body>
+</html>
